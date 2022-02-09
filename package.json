@@ -1,10 +1,10 @@
 {
   "name": "LTL-Remake",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,15 @@
     "axios": "^0.25.0",
     "express": "^4.17.2",
     "mysql": "^2.18.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aklu0830/LTL-Remake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aklu0830/LTL-Remake/issues"
+  },
+  "homepage": "https://github.com/aklu0830/LTL-Remake#readme",
+  "description": ""
 }
