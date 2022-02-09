@@ -19,6 +19,7 @@ import TabTwoScreen from '../screens/TabTwoScreen';
 import {RootStackParamList, RootTabParamList, RootTabScreenProps} from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 import TabThreeScreen from "../screens/TabThreeScreen";
+import {AntDesign} from "@expo/vector-icons";
 
 export default function Navigation({colorScheme}: { colorScheme: ColorSchemeName }) {
     return (
@@ -89,16 +90,16 @@ function BottomTabNavigator() {
                 name="TabTwo"
                 component={TabTwoScreen}
                 options={{
-                    title: 'Tab Two',
-                    tabBarIcon: ({color}) => <TabBarIcon name="code" color={color}/>,
+                    title: 'Login / View Profile',
+                    tabBarIcon: ({color}) => <TabBarIcon name="user" color={color}/>,
                 }}
             />
             <BottomTab.Screen
                 name="TabThree"
                 component={TabThreeScreen}
                 options={{
-                    title: 'Tab Three',
-                    tabBarIcon: ({color}) => <TabBarIcon name="code" color={color}/>,
+                    title: 'Users List',
+                    tabBarIcon: ({color}) => <TabBarIcon name="th" color={color}/>,
                 }}
             />
         </BottomTab.Navigator>
